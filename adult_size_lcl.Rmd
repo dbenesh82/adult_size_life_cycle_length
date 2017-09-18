@@ -1,0 +1,23 @@
+---
+title: "Long life cycles and parasite reproductive sizes"
+output: github_document
+---
+
+**Background**: I combine data on [parasite life cycles](http://onlinelibrary.wiley.com/doi/10.1002/ecy.1680/suppinfo)...
+
+**Analysis**
+First, import the libraries and host data from the life cycle database.
+
+```{r, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(RColorBrewer)
+
+options(stringsAsFactors = FALSE) #never have species lists as factors; always as character vectors
+
+#import host data
+setwd("C:/Users/phosp/OneDrive/Documents/Benesh/Proposals_ideas/DFG_eigenestelle/prelim_analyses/adult_size_lcl/")
+dataH <- read.csv(file="CLC_database_hosts.csv", header = TRUE, sep=",")
+```
+

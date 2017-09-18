@@ -1,0 +1,393 @@
+Species ,Intermediate_Paratenic_hosts,Definitive_host,LCL_long,LCL_short,Facultative,Min_TL,Max_TL,Avg_TL
+Muspicea borreli,None: infection during grooming,Domestic mice,1,1,None,2,3,2.5
+Hystrichis tricolor,Oligochaete (1),Anatids and ciconiformes,2,2,None,2,4,3
+Soboliphyme baturini,Oligochaete (1),"Mustelids, Martes and Mustela spp. ",2,2,None,2,4,3.5
+Dioctophyma renale,Oligochaete (1) [Fish/Frog (2)],Mustelids,3,2,Middle,3,4,3.5
+Eustrongylides tubifex,Oligochaete (1)  Fish (2),"Piscivorous birds: mergansers and other Anseriformes, Gaviiformes, Ciconiiformes, Podicipediformes",3,3,None,3,4,3.5
+Eustrongylides ignotus,Oligochaete (1)  Fish (2),Herons and egrets,3,3,None,3,4,3.5
+Eustrongylides excisus,Oligochaete (1)  Fish (2),"Piscivorous birds: Pelecaniformes, Ciconiiformes, Anseriformes",3,3,None,3,4,3.5
+Cystoopsis accipenseri,Gammarids (1),Ganoid Accipenser ruthensus (sturgeon),2,2,None,3,5,3.5
+Trichosomoides crassicauda,Direct ingestion by definitive host,Rats especially Rattus norvegicus. Experimental infection in Mastomys natalensis,1,1,None,2,4,2.5
+Trichurus muris,Direct ingestion by definitive host,"Mice, rats and other rodents of the genera Arvicola, Arvicanthis, Citellus, Cricetulus, Echinomys, Epimys, Georychus, Holochilus, Loncheres, Meriones, Mesocricetus, Microtus, Mus, Opodemus, Rattus and Trychomys",1,1,None,2,3,2.5
+Trichuris ovis,Direct ingestion by definitive host,"Sheep, cattle, camels, cervids, giraffes, antelope,  and porcupines",1,1,None,2,3,2
+Trichuris skrjabini,Direct ingestion by definitive host,"Camels, sheep, goats, cattle, deer, gazelles and ibex",1,1,None,2,3,2
+Trichuris vulpis,Direct ingestion by definitive host,"Dogs, foxes and polecats (Mustela putorius)",1,1,None,2,4,3.5
+Trichuris suis,Direct ingestion by definitive host,Pigs,1,1,None,2,4,2.5
+Trichuris trichiura,Direct ingestion by definitive host,Humans and other primates,1,1,None,2,5,2.21
+Bauscapillaria obsignata,Direct ingestion by definitive host,"Chickens, partridges (Perdix perdix), pigeons and turkeys",1,1,None,2,3,2.5
+Pseudocapillaria tomentosa,[Oligochaete (1)],"FW Fish Cobitidae, Perciformes, Gadiformes, Anguilliformes, Esociformes, and Siluriformes",2,1,First,2,4,3
+Pearsonema mucronata,Oligochaete (1),Mustelidae,2,2,None,3,4,3.5
+Pearsonema plica,Oligochaete (1),Canids and mustelids,2,2,None,2,4,3.5
+Aonchotheca caudinflata,Oligochaete (1),"Gallinaceous and anatid birds, including chickens, grouse, pheasants,turkeys, pigeons, ducks and geese",2,2,None,2,3,2.5
+Aonchotheca putorii,[Oligochaete (1)],Mustelidae,2,1,First,3,4,3.5
+Aonchotheca philippinensis,[Fish (1)],"Humans Philippines: considerable evidence that fish eating birds are natural hosts in the Far East, viz. Amaurornis phoenicurus, Bubulcus ibis, Gallinula chloropus, Ixobrychus sinensis and Nycticorax nycticorax ",2,1,First,3,4,3.5
+Eucoleus aerophilus,Oligochaete (1),"Carnivores, Canidae, Felidae, Mustelidae",2,2,None,2,4,3.5
+Eucoleus annulatus,Oligochaete (1),Chickens and wild game birds,2,2,None,2,3,2.5
+Eucoleus contortus,Oligochaete (1),"Great variety of birds throughout world including Anseriformes, Charadriiformes, Falconiformes, Galliformes, and Passeriformes",2,1,First,2,4,3
+Eucoleus frugilegi,Oligochaete (1),Corvidae,2,2,None,2,4,3
+Placoconus lotoris,,"Racoons, skunks",1,1,None,2,4,3
+Uncinaria stenocephala,,"Canids (dog, foxes, wolves), some other carnivores",1,1,None,2,4,3.5
+Triodontophorus tenuicollis,,Equines,1,1,None,2,3,2
+Strongylus edentatus,,Equines,1,1,None,2,3,2
+Strongylus equinus,,Equines,1,1,None,2,3,2
+Strongylus vulgaris,,Equines,1,1,None,2,3,2
+Stephanurus dentatus,Earthworms (paratenic),Pigs,2,1,First,2,4,2.5
+Syngamus trachea,"Eisenia foetida, Helodrilus caliginosus, Lumbricus terrestris (Earthworms) (paratenic)","Wild or domestic Galliformes, some Passeriformes, rarely other birds",2,1,First,2,3,2.5
+Cyathostoma bronchialis,Various earthworms (paratenic),"Ducks, geese, swans",2,2,None,2,3,2.5
+Cyathostoma lari,"L. terrestris, Eiseniella tetraedra, Eisenia foetida (Earthworms); Aphodius fossor (Dung beetle) (paratenic)",Gulls (Laridae),2,1,First,3,4,3.5
+Chabertia ovina,,"Camels, cattle, chamois, deer, gazelles, goats, sheep",1,1,None,2,3,2
+Cyclodontostomum purvisi,,"rats, Malayan giant rats Rattus mulleri, R. sabanus, R. whiteheadi ",1,1,None,2,3,2.5
+Oesophagostomum asperum,,Goats,1,1,None,2,3,2
+Oesophagostomum kansuensis,,Sheep,1,1,None,2,3,2
+Oesophagostomum radiatum,,Ruminants,1,1,None,2,3,2
+Oesophagostomum venulosum,,Ruminants,1,1,None,2,3,2
+Oesophagostomum columbianum,,Ruminants,1,1,None,2,3,2
+Oesophagostomum dentatum,,Pigs,1,1,None,2,4,2.5
+Oesophagostomum quadrispinulatum,,Pigs,1,1,None,2,4,2.5
+Ornithostrongylus quadriradiatus,,"Pigeons, doves",1,1,None,2,3,2.5
+Ollulanus tricuspis,,"Domestic cat, lion, cheetah and wild cats, dog and foxes, pigs",1,1,None,2,4,3.5
+Molineus barbatus,,"Racoons, skunks",1,1,None,2,4,3
+Hepatojarakus malayae,,Rats,1,1,None,2,3,2.5
+Oswaldocruzia filiformis,,Amphians and reptiles,1,1,None,3,4,3
+Nematodirus abnormails,,"Sheep, goats, antelope, camels",1,1,None,2,3,2
+Nematodirus battus,,"Sheep, goats, cattle",1,1,None,2,3,2
+Nematodirus filicollis,,"Sheep, goats, deer, alpaca",1,1,None,2,3,2
+Nematodirus helvetianus,,"Sheep, goats, cattle, camels",1,1,None,2,3,2
+Nematodirus spathiger,,Ruminants,1,1,None,2,3,2
+Hassalstrongylus musculi,,Cricetid rodents,1,1,None,2,3,2.5
+Heligmosomoides kurilensis kobayashii,,"Mice, jirds",1,1,None,2,3,2.5
+Heligmosomoides polygyrus polygyrus,,Mice,1,1,None,2,3,2.5
+Epomidiostomum uncinatum,,Ducks & geese,1,1,None,2,3,2.5
+Amidostomum acutum,,Ducks & geese,1,1,None,2,3,2.5
+Amidostomum fulicae,,Coots,1,1,None,2,3,2.5
+Libyostrongylus douglasi,,Ostrich,1,1,None,2,3,2
+Obeliscoides cuniculi cuniculi,,"Rabbits, marmots",1,1,None,2,3,2
+Obeliscoides cuniculi multistriatus,,Snowshoe hare,1,1,None,2,3,2
+Cooperia curticei,,"Sheep, goats, deer, mouflon",1,1,None,2,3,2
+Cooperia fuelleborni,,Antelopes,1,1,None,2,3,2
+Cooperia pectinata,,Ruminants,1,1,None,2,3,2
+Cooperia oncophora,,Ruminants,1,1,None,2,3,2
+Cooperia punctata,,Ruminants,1,1,None,2,3,2
+Teladorsagia circumcincta,,Ruminants,1,1,None,2,3,2
+Graphidium strigosum,,Rabbits,1,1,None,2,3,2
+Hyostrongylus rubidus,,Pigs,1,1,None,2,4,2.5
+Ostergia ostertagi,,Cattle,1,1,None,2,3,2
+Haemonchus contortus,,Ruminants,1,1,None,2,3,2
+Haemonchus placei,,Cattle,1,1,None,2,3,2
+Trichostrongylus tenuis,,Grouse & geese,1,1,None,2,3,2.5
+Trichostrongylus sigmodontis,,"cotton rats, rice rats, nutia",1,1,None,2,3,2.5
+Trichostrongylus skrjabini,,"Sheep, mouflon, roe deer",1,1,None,2,3,2
+Trichostrongylus retortaeformis,,"Rabbits, hares",1,1,None,2,3,2
+Trichostrongylus axei,,"Ruminants, horses",1,1,None,2,3,2
+Trichostrongylus vitrinus,,"Ruminants, pigs, rabbits",1,1,None,2,4,2
+Trichostrongylus colubriformis,,Ruminants,1,1,None,2,3,2
+Trichostrongylus rugatus,,"Sheep, goats",1,1,None,2,3,2
+Dictyocaulus arnfieldi,,"Equines, Indian tapir",1,1,None,2,3,2
+Dictyocaulus filaria,,"Sheep, goats, antelope, deer ",1,1,None,2,3,2
+Dictyocaulus eckerti,,Deer,1,1,None,2,3,2
+Dictyocaulus viviparus,,"Cattle, deer",1,1,None,2,3,2
+Troglostrongylus brevior,Terrestrial molluscs (first intermediate),Felines,2,2,None,3,4,3.5
+Skrjabingylus chitwoodorum,Gastropods (first) Snakes & Frogs (paratenic),Skunks,3,2,Middle,2,4,3
+Skrjabingylus lutrae,Snails (first intermediate),Otters,2,2,None,3,4,3.5
+Skrjabingylus nasicola,"Gastropods (first) Rodents, shrews (paratenic)",Mustelidae,3,2,Middle,3,4,3.5
+Skrjabingylus petrowi,Terrestrial snails (first intermediate),Martens,2,2,None,2,4,3.5
+Otostrongylus circumlitus,Fish (first intermediate),Seals,2,2,None,3,5,3.916666667
+Crenosoma petrowi,Terrestrial molluscs (first intermediate),Black Bear,2,2,None,2,5,2.5
+Crenosoma vulpis,Terrestrial molluscs (first intermediate),Canids,2,2,None,2,4,3.5
+Crenosoma striatum,Terrestrial molluscs (first intermediate),European Hedgehog,2,2,None,2,4,3
+Crenosoma mephitidis,Terrestrial molluscs (first intermediate),Skunks,2,2,None,2,4,3
+Oslerus rostratus,Gastropods (first) Mice (paratenic),Felines,3,2,Middle,3,4,3.5
+Oslerus osleri,,"Wild canids, especially coyotes, foxes, dingos",1,1,None,2,4,3.5
+Metastrongylus apri,Earthworms (first intermediate),Pigs,2,2,None,2,4,2.5
+Metastrongylus pudendotectus,Earthworms (first intermediate),Pigs,2,2,None,2,4,2.5
+Metastrongylus salmi,Earthworms (first intermediate),Pigs,2,2,None,2,4,2.5
+Filaroides decorus,Fish (first intermediate),Sealion,2,2,None,3,5,4.1
+Filaroides hirthi,,Beagle dogs,1,1,None,2,4,3.5
+Filaroides martis,Molluscs (first intermediate),Mink,2,2,None,3,4,3.5
+Trilobostrongylus bioccai,Molluscs (first intermediate),Martes pennanti,2,2,None,2,4,3.5
+Andersonstrongylus captivensis,,Skunk Mephitis mephitis,1,1,None,2,4,3
+Aelurostrongylus abstrusus,"Terrestrial molluscs (first) Amphibia, reptiles, birds, small rodents (paratenic)",Cats,3,2,Middle,3,4,3.5
+Aelurostrongylus falciformis,Gastropods (first intermediate),Badgers,2,2,None,2,4,3
+Aelurostrongylus pridhami,"Gastropods (first) Fish, frogs, birds, mice (paratenic)",Mink,3,2,Middle,3,4,3.5
+Didelphostrongylus hayesi,Molluscs (first intermediate),Opossum,2,2,None,2,4,3
+Angiostrongylus andersoni,Terrestrial molluscs (first intermediate),Rodents,2,2,None,2,3,2.5
+Angiostrongylus dujardini,Aquatic snails (first intermediate),Rodents,2,2,None,2,3,2.5
+Angiostrongylus mackerrasae,Terrestrial molluscs (first intermediate),Rodents,2,2,None,2,3,2.5
+Angiostrongylus siamensis,Aquatic snails (first intermediate),Rats,2,2,None,2,3,2.5
+Angiostrongylus cantonensis,"Molluscs (first) Crabs, frogs and toads, planaria, fish (paratenic host)","Rats, humans",3,2,Middle,2,5,2.5
+Angiostrongylus malaysiensis,Terrestrial molluscs (first intermediate),Rodents,2,2,None,2,3,2.5
+Angiostrongylus costaricensis,Slugs (first intermediate),Rodents,2,2,None,2,3,2.5
+Angiostrongylus vasorum,Gastropods (first) Frogs (paratenic),"Dogs, foxes",3,2,Middle,2,4,3.5
+Neostrongylus linearis,Terrestrial molluscs (first intermediate),"Sheep, goats, chamois",2,2,None,2,3,2
+Pneumostrongylus calcaratus,Terrestrial molluscs (first intermediate),African antelopes,2,2,None,2,3,2
+Varestrongylus alpenae,Terrestrial molluscs (first intermediate),Deer,2,2,None,2,3,2
+Varestrongylus capreoli,Terrestrial molluscs (first intermediate),Deer,2,2,None,2,3,2
+Varestrongylus pneumonicus,Terrestrial molluscs (first intermediate),"Sheep, goats",2,2,None,2,3,2
+Varestrongylus sagittatus,Terrestrial molluscs (first intermediate),Deer,2,2,None,2,3,2
+Elaphostrongylus alces,Terrestrial molluscs (first intermediate),Moose,2,2,None,2,3,2
+Elaphostrongylus cervi,Terrestrial molluscs (first intermediate),Deer,2,2,None,2,3,2
+Elaphostrongylus rangiferi,Terrestrial molluscs (first intermediate),"Reindeer, caribou",2,2,None,2,3,2
+Parelaphostrongylus andersoni,Terrestrial molluscs (first intermediate),"Deer, caribou",2,2,None,2,3,2
+Parelaphostrongylus odocoilei,Terrestrial molluscs (first intermediate),"Deer, goats, caribou",2,2,None,2,3,2
+Parelaphostrongylus tenuis,Terrestrial molluscs (first intermediate),Deer,2,2,None,2,3,2
+Muellerius capillaris,Terrestrial molluscs (first intermediate),"Sheep, goats",2,2,None,2,3,2
+Cystocaulus ocreatus,Terrestrial molluscs (first intermediate),"Sheep, goats",2,2,None,2,3,2
+Umingmakstrongylus pallikuukensis,Terrestrial molluscs (first intermediate),Musk ox,2,2,None,2,3,2
+Protostrongylus broughtoni,Terrestrial molluscs (first intermediate),Lagomorphs,2,2,None,2,3,2
+Protostrongylus cunicularum,Terrestrial molluscs (first intermediate),Lagomorphs,2,2,None,2,3,2
+Protostrongylus davtiani,Terrestrial molluscs (first intermediate),Ungulates,2,2,None,2,3,2
+Protostrongylus hobmaieri,Terrestrial molluscs (first intermediate),Ungulates,2,2,None,2,3,2
+Protostrongylus kamenskyi,Terrestrial molluscs (first intermediate),Lagomorphs,2,2,None,2,3,2
+Protostrongylus pulmonalis,Terrestrial molluscs (first intermediate),Lagomorphs,2,2,None,2,3,2
+Protostrongylus rufescens,Terrestrial molluscs (first intermediate),Ungulates,2,2,None,2,3,2
+Protostrongylus rushi,Terrestrial molluscs (first intermediate),Ungulates,2,2,None,2,3,2
+Protostrongylus skrjabini,Terrestrial molluscs (first intermediate),Ungulates,2,2,None,2,3,2
+Protostrongylus stilesi,Terrestrial molluscs (first intermediate),Ungulates,2,2,None,2,3,2
+Protostrongylus tauricus,Terrestrial molluscs (first intermediate),Lagomorphs,2,2,None,2,3,2
+Dichelyne bullocki,,Fish,1,1,None,3,4,3.6
+Dichelyne cotylophora,Minnow (first intermediate),Perch,2,2,None,3,4,3.7
+Dichelyne minutus,Polychaetes (first intermediate) Sand gobies (second),Flounder,3,2,Middle,2,4,3.25
+Truttaedacnitis pybusae,,Lampreys,1,1,None,3,4,2.2
+Truttaedacnitis truttae,ammocoetes (first intermediate),Salmonid fish,2,2,Last,3,5,4.35
+Cucullanus chaubaudi,,Fish,1,1,None,2,3,3.4
+Cucullanus cirratus,Copepod (fac) Small fish or cod fry,Cod,3,2,First,2,4,4.3
+Cucullanus heterochrous,Polychaetes (intermediate),Flatfish like flounder and plaic,2,2,None,2,4,3.25
+Anguillicola crassus,"Copepods, ostracods (first) Small forage fish (second)",Eels,3,2,Middle,3,4,3.55
+Anguillicola globiceps,Copepods (first) Small forage fish (second),Eels,3,2,Middle,3,4,3.6
+Anguillicola novaezelandiae,Copepods (first) Small forage fish (second),Eels,3,2,Middle,3,5,4.3
+Spiroxys contortus,"Copepods (first) Small fish, tadpoles, frogs, newts, dragonfly nymphs, FW snails (paratenic)",Terrapins,3,3,Middle,2,4,3
+Gnathostoma hispidum,"Copepods (first) Fish, frogs, reptiles, birds (paratenic)",Pigs,3,3,None,2,4,2.5
+Gnathostoma procyonis,"Copepods (first) Fish, terrapins, snakes, alligator (paratenic)",Racoons,3,3,None,2,4,3
+Gnathostoma turgidum,"Copepods (first) tadpoles, turtles (paratenic)",Opossums,3,3,None,2,4,3
+Gnathostoma vietnamicum,"Copepod Mesocyclops leuckarti (first intermediate), freshwater fish (second intermediate) (Rojekittikhun 2002)",Otter Lutra elioti,3,3,None,3,4,3.5
+Gnathostoma doloresi,"Copepods (first) Salamanders, snakes, others experimentally (paratenic)",Pigs,3,3,None,2,4,2.5
+Gnathostoma spinigerum,Copepods (first) wide range of vertebrates including man (paratenic),"Cats, dogs",3,3,None,2,4,3.5
+Gnathostoma binucleatum,"Copepods (first) Small fish, turtles (paratenic)",Cats,3,3,None,3,4,3.5
+Gnathostoma nipponicum,"Copepods (first) Frogs, insect larvae, birds, snakes (second)",Weasels,3,3,None,3,4,3.5
+Maupasina weissi,Locust (first intermediate),North African elephant shrew,2,2,None,2,3,3
+Allodapa suctoria,"Beetles, earwigs, orthopterans (first intermediate)",Poultry,2,2,None,2,3,2.5
+Subulura bolivari,Beetles (first intermediate),Little owl,2,2,None,3,4,3.5
+Subulura jacchi,Cockroaches (first intermediate),Brazilian marmoset,2,2,None,2,3,2.5
+Subulura otolicni,Earwigs (first intermediate),Lemurs,2,2,None,2,3,2.5
+Subulura williaminglisi,Earwigs (first intermediate),Rodents,2,2,None,2,3,2.5
+Tarsubularia perarmata,Crickets (first intermediate),Tarsiers and Tupaids,2,2,None,2,4,3
+Paraquimperia tenerrima,Minnow (first intermediate),Eel,2,2,None,3,4,4.1
+Skrjabinelazia galliardi,Cricket (paratenic),Lizard,2,1,First,3,3,3
+Seuratum cadarachense,Locust (first intermediate),Rodent,2,2,None,2,3,2.5
+Seuratum nguyenvanaii,Cockroaches (first intermediate),Shrew,2,2,None,2,3,3
+Rictularia cristata,"Millipedes, relates arthopods (first intermediate)",Rodents,2,2,None,2,3,2.5
+Rictularia proni,"Orthopterans demapterans, coleopterans (first intermediate)",Rodents,2,2,None,2,3,2.5
+Pterygodermatites affinis,"Tachyderma hispida (Tenebrionid, first), reptiles (paratenic)",Mammalian carnivores,3,2,Middle,3,4,3.5
+Pterygodermatites coloradensis,"Cockroaches, beetles, crickets (first intermediate) ",Rodents,2,2,None,2,3,2.5
+Pterygodermatites desportesi,Earwigs (first intermediate),Lophuromys sikapusi (Muridae),2,2,None,2,3,2.5
+Pterygodermatites hispanica,Locusts (first intermediate),Apodemus silvaticus (Muridae),2,2,None,2,3,2.5
+Pterygodermatites nycticebi,Cockroaches (first intermediate),New World Monkeys,2,2,None,2,3,2.5
+Pterygodermatites peromysci,Crickets (first intermediate),White-footed mouse (Peromyscus leucopus),2,2,None,2,3,2.5
+Pterygodermatites taterilli,Locusts (first intermediate),Cricetidae (rodents),2,2,None,2,3,2.5
+Pterygodermatites zygodontomis,"Dermaptera, cockroaches (first intermediate)", Brazilian Cricetidae (rodents),2,2,None,2,3,2.5
+Enterobius vermicularis,,Humans,1,1,None,2,5,2.21
+Gyrinicola batrachiensis,,Tadpoles,1,1,None,2,3,2.5
+Oxyuris equi,,Horses,1,1,None,2,3,2
+Skrjabinema ovis,,"Sheep, goats",1,1,None,2,3,2
+Aspiculuris tetraptera,,Mice,1,1,None,2,3,2.5
+Passalarus ambiguus,,"Rabbits, hares",1,1,None,2,3,2
+Syphacia muris,,Rats,1,1,None,2,3,2.5
+Syphacia obvelata,,Mice,1,1,None,2,3,2.5
+Spinicauda freitasi,,Chameleons,1,1,None,2,4,3
+Heterakis gallinarum,Earthworms (paratenic),Galliforms,2,1,First,2,3,2.5
+Heterakis spumosa,Earthworms (first intermediate),Rats and mice,2,1,First,2,3,2.5
+Ascaridia columbae,,Pigeons,1,1,None,2,3,2.5
+Ascaridia compar,,Rock partridge,1,1,None,2,3,2.5
+Ascaridia dissimilis,,Turkeys,1,1,None,2,3,2.5
+Ascaridia galli,"Earthworms (paratenic, occur in worm intestine only)",Galliforms,2,1,First,2,3,2.5
+Ascaridia numidae,,Guinea fowl,1,1,None,2,3,2.5
+Megalobatrachonema terdentatum,Oligochaetes ? (first intermediate),Salamanders,2,2,None,3,4,3
+Aplectana courdurieri,Tadpoles (first intermediate),Frogs and tadpoles (infection in tadpoles mature in frogs) ,1,1,None,2,4,2.5
+Aplectana macintoshii,,Frogs and toads,1,1,None,3,4,3
+Pseudoterranova decipiens,Planktonic crustacea (first) Benthic macroinvertebrates (second)  Small fish (third) Piscivorous fish (fourth),Pinnipeds,4,3,Middle,3,5,4
+Anisakis physeteris,Euphausid shrimps (first)      Fish (second),Whales,3,3,Middle,3,5,4.4
+Anisakis simplex,Euphausid shrimps (first)      Fish (second),Pinnipeds & Cetaceans,3,3,Middle,3,5,4.125
+Anisakis typica,Euphausid shrimps (first)      Fish (second),Cetaceans,3,3,Middle,3,5,4.183333333
+Sulcascaris sulcata,Molluscs (first intermediate),Marine turtles,2,2,None,2,4,2.4
+Contraceacum osculatum,Copepods (first)   Fish (second),Seals,3,3,None,3,5,3.733333333
+Contraceacum microcephalum,Copepods (first)   Young fish and odonates (second),Piscivorous birds,3,3,None,3,4,3.5
+Contraceacum micropapillatum,"Copepods (first)   Fish, frogs, Odonata (second)",Pelicans,3,3,None,3,4,3.5
+Contraceacum multipapillatum,Copepods (first)   Fish (second),Water birds,3,3,None,3,4,3.5
+Contraceacum rudolphi,"Copepods (first), amphipods, fish (paratenic)",Piscivorous birds,3,2,Middle,3,4,3.5
+Porrocaecum angusticolle,"Eathworms (first)  Shrews, moles (paratenic)",Hawks,3,3,None,3,4,3.5
+Porrocaecum crassum,Earthworms (first intermediate),Waterfowl,2,2,None,2,3,2.5
+Porrocaecum ensicaudatum,Earthworms (first intermediate),Passerines,2,2,None,2,3,2.5
+Porrocaecum semiteres,Earthworms (first intermediate),Various birds,2,2,None,2,4,3
+Goezia ascaroides,Copepod (first) Fish fry (paratenic),Catfish,3,3,Middle,3,5,4.4
+Raphidascaris acus,Small fish (or invertebrates) (first intermediate),Piscivorous fishes,3,2,First,3,4,3.775
+Hysterothylacium aduncum,"Copepods, etc. (first)  Planktivorous fish (paratenic)",Piscivorous fish,3,2,Middle,3,4,3.95
+Hysterothylacium analarum,Copepods (first intermediate),Centrarchid fish,2,2,None,2,3,3.1
+Hysterothylacium bidentatum,Gammarus (first intermediate),Sterlet (sturgeon),2,2,None,3,5,3.6
+Hysterothylacium haze,Polychaetes or small crustacea (facultative intermediate),Goby,2,1,First,2,4,3.3
+Toxocara pteropodis,N/a,Fruit bats,1,1,None,2,3,2
+Toxocara vitulorum,N/a,"Cattle, goats, sheep",1,1,None,2,3,2
+Toxocara canis,"Various birds, small mammals (paratenic)",Dog,2,1,First,2,4,3.5
+Toxocara cati,Invertebrates and vertebrates (first intermediate or paratenic?),Felines,2,1,First,3,4,3.5
+Brevimulticaecum tenuicolle,Frogs (first intermediate),Alligator,2,2,None,3,5,4
+Amplicaecum robertsi,Various marsupials and other mammals (first intermediate),Carpet pythons,2,2,None,3,4,3.5
+Polydelphis anoura,Rodents (first intermediate),Pythons,2,2,None,3,4,3.5
+Travassosascaris araujoi,Mice (first intermediate),Snakes,2,2,None,3,4,3.5
+Ophidascaris labiatopapillosa,Amphibians (first intermediate),Snakes,2,2,None,3,4,3.5
+Ophidascaris moreliae,Mammals (first intermediate),Carpet pythons,2,2,None,3,4,3.5
+Hexametra angusticaecoides,Chameleons (first intermediate),Chameleons and Snakes (Madagascar),2,1,Last,2,4,3
+Hexametra boddaertii,Mice (first intermediate),Snakes,2,2,None,3,4,3.5
+Hexametra quadricornis,Mice (first intermediate),Snakes,2,2,None,3,4,3.5
+Toxascaris leonina,Mice (facultative first intermediate),Canidae and Felidae,2,1,First,2,4,3.5
+Lagochilascaris minor,"Mice, agoutis, rodents (first intermediate)","Dogs, cats, humans (occasionally)",2,2,None,2,4,3.5
+Lagochilascaris sprenti,Rodents (first intermediate),Opossums,2,2,None,2,4,3
+Parascaris equorum,,Equidae,1,1,None,2,3,2
+Ascaris lumbricoides,,Human,1,1,None,2,5,2.21
+Ascaris suum,,Pig,1,1,None,2,4,2.5
+Bayliascaris columnaris,"Mice, voles (first intermediate)",Skunks,2,2,None,2,4,3
+Bayliascaris devosi,Mice (first intermediate),Martens,2,2,None,2,4,3.5
+Bayliascaris laevis,Small mammals (first intermediate),"Marmots, ground squirrrels",1,1,None,2,4,2.5
+Bayliascaris procyonis,Rodents (first intermediate),Racoons,2,1,First,2,4,3
+Bayliascaris tasmaniensis,Small marsupials (first intermediate),Carnivorous marsupials,2,2,None,3,4,3.5
+Bayliascaris schroederi,Mice (first intermediate),Giant Panda,2,2,None,2,3,2
+Bayliascaris transfuga,Mice (first intermediate),"Bears, Pandas",2,2,None,2,5,2.5
+Philonema agubernaculum,Copepods (first intermediate),Salmo salarand Salvelinus fontinalis,3,2,Middle,3,4,3.75
+Philonema oncorhynchi,Copepods (first intermediate),Salmon - Oncorynchus spp.,2,2,None,3,4,3.7
+Micropleura indica,Copepods (first intermediate),Freshwater turtle: Lissemys punctata,2,2,None,2,4,3
+Avioserpens mosgovoyi,"Copepods (first) Small fish, frogs, dragonfly nymphs (paratenic)","Coots, grebes, mallards",3,3,None,2,4,2.5
+Avioserpens taiwana,Copepods (first intermediate),Ducks,2,2,None,2,3,2.5
+Dracunculus doi,Copepods (first intermediate),Snake: Sanzinia madagascariensis,2,2,None,3,4,3.5
+Dracunculus ophidensis,Copepods (first) Tadpoles (paratenic),Garter snakes: Chamnophis sirtalis,3,3,None,3,4,3.5
+Dracunculus insignis,Copepods (first) Tadpoles and frogs (paratenic),Racoons,3,3,None,2,4,3
+Dracunculus medinensis,Copepods (first intermediate),Humans,2,2,None,2,5,2.21
+Philometra abdominalis,Copepods (first intermediate),Fish: Cyprinidae,2,2,None,2,3,2.95
+Philometra cylindracea,Copepods (first intermediate),Perch,2,2,None,3,4,3.7
+Philometra fujimotoi,Copepods (first intermediate),Fish: Ophiocephalus argus,2,2,None,3,4,4.2
+Philometra sibirica,Copepods (first intermediate),Fish: Coregonas alba,2,2,None,3,3,3
+Philometroides huronensis,Copepods (first intermediate),Fish: Catostomus commersoni,2,2,None,2,3,2.8
+Philometroides nodulosa,Copepods (first intermediate),Fish: Catostomus commersoni and other fish,2,2,None,2,3,2.8
+Philometroides parasiluri,Copepods (first intermediate),Fish: Percottus glehni,2,2,None,3,4,3.6
+Philometroides sanguinea,Copepods (first intermediate),Crucian carp,2,2,None,2,3,3.1
+Philometra obturans,Copepods (first) Small forage fish (paratenic),Pike,3,3,None,3,4,4.4
+Philometra ovata,Copepods (first intermediate),Cyprinidae,2,2,None,2,3,2.966666667
+Philometroides cyprini,Copepods (first intermediate),Carp,2,2,None,2,3,3
+Neocamallanus ophiocephali,Copepods (first intermediate),Fish: Channa (= Ophiocephalus)  striatus ,2,2,None,3,4,3.7
+Paracamallanus cyathopharynx,Copepods (first intermediate),Catfish: Clariiidae,2,2,None,3,4,3.2
+Paracamallanus singhi,Copepods (first intermediate),Fish: Channa striata,2,2,None,3,4,3.7
+Paracamallanus sweeti,Copepods (first) Small forage fish (paratenic),Fish: Ophiocephalus gachua,3,3,None,3,4,3.8
+Camallanus anabantis,Cylops (first intermediate),Climbing perch: Anabas testudineus,2,2,None,2,3,2.7
+Camallanus cotti,Cylops (first intermediate),Guppies,2,1,First,2,3,3.325
+Camallanus truncatus,Copepods (first intermediate),Many fish,2,2,None,3,4,4.35
+Camallanus xenentodonti,Cylops (first intermediate),Xenentodon cancila (a fish),2,2,None,3,4,3.9
+Camallanus zacconis,Copepods (first intermediate),Zacco tennimcki (a fish),2,2,None,2,3,2.8
+Camallanus lacustris,Cyclopoid copepods (first) cyprinid and cobitid fish (paratenic),Perch (Pike),3,2,Last,3,4,4.4
+Camallanus oxycephalus,Copepods (first) Planktonivorous fish (second),Piscivorous fish,3,3,Last,3,4,3.633333333
+Procamallanus fukiensis,Copepods (first intermediate),Catfish: Parasilurus asotus,2,2,None,3,5,4.5
+Procamallanus neocaballeroi,Copepods (first intermediate),Fish: Astyanax fasciatus,2,2,None,2,3,2.8
+Procamallanus rebecae,Copepods (first) Guppies (paratenic),Cichlid fishes,3,2,Middle,2,4,4.1
+Procamallanus spiculogubernaculus,Copepods (first intermediate),Fish: Heteropneustes fossilis,2,2,None,3,4,3.7
+Spirocamallanus cearensis,Copepods (first) Fish: Curimatus elegans (paratenic?),Fish: Astyanax bimaculatus,3,2,Last,2,4,2.2
+Spirocamallanus cricotus,"Copepod (first) Shrimp, squid (paratenic?)",Marine and estuarine fish,3,2,Middle,2,4,3.3
+Spirocamallanus mysti,Copepods (first intermediate),Fish: Mystus vittatus,2,2,None,3,3,3.1
+Spirocamallanus xenopodis,Copepods (first intermediate),Toads: Xenopus spp.,2,2,None,2,3,2.5
+Spirocamallanus fulvidraconis,Copepods (first intermediate),Fish: Tachysurus/Pseudopaguis fulvidraco,2,2,None,3,4,3.2
+Procamallanus laeviconchus,Copepods (first) Gambusia affinis (paratenic),"Fish, esp. silurioid catfish",3,2,Middle,3,4,3.2
+Pseudophysaloptera vincenti, Earwigs (first intermediate),Lemur,2,2,None,2,3,2.5
+Skrjabinoptera phrynosoma,Ants (first intermediate),Texas horned toads (reptile),2,2,None,3,3,3
+Thubunaea baylisi,Beetles (first intermediate),Lizards,2,2,None,3,3,3
+Abbreviata caucasica,"Cockroaches, grasshoppers", Black mangabey (Cercocebus aterrimus),2,2,None,2,3,2.5
+Abbreviata kazachstanica,"Beetles (first) frogs, geckos (paratenic)",European Legless Lizard: Ophisaurus aphodus,2,3,Middle,3,4,3.5
+Physaloptera hispida,"Ground beetles, earwigs, cockroaches (first)",Cotton rat,2,2,None,2,3,2.5
+Physaloptera maxillaris,"Crickets (first) Frogs, garter snakes (paratenic)",Skunk,3,2,Middle,2,4,3
+Physaloptera praeputialis,"Cockroaches, crickets (first) reptiles and small mammals (paratenic)",Cats,3,2,Middle,3,4,3.5
+Physaloptera rara,"Cockroaches, beetles, crickets (first) rattlesnakes (second)","Coyotes (also dogs, foxes and cats)",3,2,Middle,2,4,3.5
+Turgida turgida,"Cockroaches, crickets (first) reptiles, amphibia and small mammals (paratenic?)",Opossums,3,2,Middle,2,4,3
+Streptocara crassicauda,Amphipods (first) varous fish (paratenic),"Anatidae, but also predatory ducks",3,2,Middle,2,4,2.5
+Ancyracanthopsis winegardi,Fiddler crabs (first intermediate),Shore waders,2,2,None,3,3,3
+Cheilospirura spinosa,Grasshoppers (first intermediate),Grouse and quail,2,2,None,2,3,2.5
+Cosmocephalus obvelatus,Amphipods (first) various fishes (paratenic),"Piscivorous birds, mainly Laridae",3,2,Middle,3,4,3.5
+Dispharynx nasuta,Terrestrial isopods (first intermediate),Gallinaceous and passerine birds,2,2,None,2,3,2.5
+Echinuria uncinata,"Daphnids, amphipods, isopods, ostracods (first intermediate)",Anatidae ,2,2,None,2,3,2.5
+Paracuaria adunca,Amphipods (first) various fish (paratenic),Piscivorous birds,3,2,Middle,3,4,3.5
+Skrjabinocerca americana,"Amphipod, Hyalella aztica (first intermediate)",Charadriiformes,2,2,None,2,4,3
+Skrjabinocerca prima,Orchestia ochotensis (Amphipod) (first intermediate),"Charadriidae, Alcedinidae, Emberrizidae, Montacillidae, Troglodytidae, Cuculidae",2,2,None,2,4,3
+Syncuaria squamata,Ostracods (first) various fish (paratenic),Phalacrocoracidae (cormorants),3,2,Middle,3,4,3.5
+Desportesius brevicaudatus,Anax spp. Larvae (first) various fish (paratenic),"Bittern (Botaurus stellaris), Little Bittern (Ixobrynchus minutus)",3,2,Middle,3,4,3.5
+Desportesius invaginatus,Ostracods (first) tadpoles (second),Cattle egrets (Bubulus ibis),3,2,Middle,3,4,3.5
+Skrjabinoclava inornatae,Fiddler crabs (first intermediate),"Western willets,  Catoptrophorus semipalmatus",2,2,None,2,3,2.5
+Skrjabinoclava morrisoni,Chorophium volutator (amphipod) (first intermediate),Semipalmated sandpipers Calidris pucilla,2,2,None,2,3,3
+Acuaria anthuris,Locusta migratoria (first intermediate),Corvids Pica and Garrulus,2,2,None,2,4,3
+Acuaria depressa,Malanoplus femurrubrum and other crickets (first intermediate),Corvids,2,2,None,2,4,3
+Acuaria gruveli,Tylotropidus patagiatus (Acrididae) (first intermediate),Frankolinus bicalcaratus (Frankolin),2,2,None,2,3,2.5
+Acuaria hamulosa,"Grasshoppers, other orthopterans, beetles (first intermediate)",Chickens and turkeys,2,2,None,2,3,2.5
+Capillospirura pseudoargumentosa,Gammarus fasciatus & G. tigrinus (first intermediate),Acipenser brevirostum,2,2,None,3,3,3.3
+Salvelinema salmonicola,Gammarus spp (first intermediate),Pacific salmonids,2,2,None,3,4,4.4
+Salvelinema walkeri,Ramellogammarus vancouverensis (first intermediate),Pacific salmonids,2,2,None,3,4,3.7
+Cystidicola farionis,Amphipods (first intermediate),"Coregonid fish, Oncorhynchus, Salmo trutta. Osmerus mordax",3,2,Last,3,4,3.7875
+Cystidicola stigmatura,Mysis relicta (first intermediate),"Salvelinus spp (Brook trout, etc.)",2,2,None,3,4,3.9
+Cystidicoloides tenuissima,"Mayfly nymphs (first)  Minnows, loach (paratenic)",Salmonids,3,2,Middle,3,4,3.566666667
+Ascarophis marina,decapod shrimp,Parona signata and Urophicis brasiliensis (fish),2,2,None,3,4,3.6
+Ascarophis morrhuae,Marine decapods (first intermediate),Gadoid fish like cod and haddock,2,2,None,3,5,4.25
+Ascarophis pacificus,"Marine amphipods, isopods, decapods (first intermediate)","Various benthic-feeding fish, but also piscivorous like cod (Raja smirnovi, Pleurogrammus azonus, Myoxocephalus brandti, Gymnacanthus herzensteini, Alcichthus elongatus, Liparis sp., Stichaeus grigorjewi, Gadus morhua, Eleginus navaga and Theragra chalcog",2,2,None,3,4,3.866666667
+Ascarophis arctica,Gammarids (can become mature in Gammarus oceanicus),"Four-horn sculpin, Myoxocephalus quadricornis",2,1,Last,3,4,3.7
+Spinitectus carolini,"Mayfly nymphs, larval Plecoptera and Diptera (first)",Freshwater fishes (Trophic transfer may occur between fishes),3,2,Last,3,4,3.3
+Spinitectus gracilis,"Mayfly nymphs, odonatans, plecopterans, f.w. collembolan (first) Lepomis cyanellus fish (paratenic)",Freshwater fishes and amphibians (Trophic transfer may occur between fishes),3,2,Last,3,4,3.3
+Spinitectus inermis,Mayfly nymphs,Eels,2,2,None,3,4,3.5
+Spinitectus micracanthus,Mayfly nymphs (Hexagenia spp.) (first intermediate),Lepomis macrochirus (Bluegill Sunfish),2,2,None,3,4,3.2
+Spinitectus ranae,Freshwater shrimp (Paratya compressa improvisa) (first intermediate),"Cynops pyrrhogaster (Japanese firebelly newt), Rana spp.",2,2,None,3,3,3
+Rhabdochona canadensis,Ephemeropteran nymphs (first intermediate),Fish: Cyprinella lutrensis,2,2,None,2,3,2.8
+Rhabdochona cascadilla,Ephemeropteran nymphs (first intermediate),Fish: Notropis cornutus,2,2,None,2,3,2.3
+Rhabdochona denudata,Ephemeropteran nymphs (first intermediate),Fish: Leuciscus cephalus (chub),2,2,None,2,3,3
+Rhabdochona ergensi,Ephemeropteran nymphs (first intermediate),Fish: Noemacheilus barbatulus,2,2,None,3,3,3.2
+Rhabdochona hellichi,Trichopteran larvae (first intermediate),Fish: Barbus barbus,2,2,None,3,3,3.1
+Rhabdochona kidderi,Ephemeropteran nymphs (first intermediate),Fish: Cichlasoma cyanoguttatum,2,2,None,2,3,2.9
+Rhabdochona phoxini,Ephemeropteran nymphs (first intermediate),Fish: Phoxinus phoxinus,2,2,None,3,3,3.1
+Rhabdochona rotundicaudatum,Ephemeropteran nymphs (first intermediate),Fish: Notropis cornutus,2,2,None,2,3,2.3
+Rhabdochona zacconis,Ephemeropteran nymphs ?,Fish: Tribolodon hakonensis,2,2,None,2,3,2.8
+Hedruris androphora,Asellus aquaticus (first intermediate),Urodela,2,2,None,3,4,3
+Hedruris ijimai,Asellus hilgendorfi (first intermediate),Rana sp.,2,2,None,3,4,3
+Procyrnea zorillae,"Tenebrionid beetles (first) Reptiles, hedgehogs (paratenic)",Owls,3,2,Middle,3,4,3.5
+Sicarius dipterum,"Beetles Asidia sp.,  Phylan abbreviatus, Tentyria mucronatus (first intermediate)",Hoopoe,2,2,None,2,3,3
+Cyrnea colini,"Blatella germanica, nymphs of Malanoplus femurrubrus (first intermediate)",Phasianidae,2,2,None,2,3,2.5
+Cyrnea eurycerca,Acridid: Tylotropidius patagiatus (first intermediate),Frankolinus bicalcaratus (Phasianidae),2,2,None,2,3,2.5
+Cyrnea mansioni,Acridid: Tylotropidius patagiatus (first) Toads (paratenic),"Falconiforms Milvus migrans, Accipites badius and others ",3,2,Middle,3,4,3.5
+Dicheilonema rheae,"Acrida turrita, Calliptamus barbatus (first intermediate)",Rhea americana,2,2,None,2,3,2
+Quadriplotriaena hypsokysta,Grasshopper Aeropedellus clavatus (first intermediate),Meadowlarks Sturnella sp.,2,2,None,2,3,2.5
+Serratospiculum tendo,"Geotrupes sylvaticus, Locusta migratorius (first intermediate)",Falcons,2,2,None,3,4,3.5
+Diplotriaena agelaeus,Grasshopper Camnula pellucida (intermediate),Icteridae e.g. Quiscalus quiscula,2,2,None,2,3,2.5
+Diplotriaena bargusinica,"Grasshoppers Melanoplus bilituratus, M. fasciatus, Camnula pellucida (intermediate)",Thrushes Turdidae,2,2,None,2,3,2.5
+Diplotriaena tricuspis,Grasshopper Meloplus sanguinipes (first intermediate),American crow Corvus brachyrhynchos,2,2,None,2,4,3
+Diplotriaena tridens,Locusta migratoria (first intermediate),Sylvia atricapilla,2,2,None,2,3,2.5
+Microtetrameres centuri,Grasshoppers (first intermediate),Meadowlarks,2,2,None,2,3,2.5
+Microtetrameres corax,Grasshoppers (first intermediate),Magpies,2,2,None,2,4,3
+Microtetrameres helix,Grasshoppers (first intermediate),Corvidae,2,2,None,2,4,3
+Microtetrameres inermis,Orthoperans (first intermediate),African weaver finch,2,2,None,2,3,2.5
+Tetrameres americana,Grasshoppers (first intermediate),"Chickens, Bobwhite quail",2,2,None,2,3,2.5
+Tetrameres cardinalis,Locusta migratoria (first intermediate),Northern cardinal Cardinalis cardinalis,2,2,None,2,3,2.5
+Tetrameres confusa,Grasshoppers (first intermediate),Chickens,2,2,None,2,3,2.5
+Tetrameres crami,Hyalella azteca and Gammarus fasciatus (first intermediate),Ducks,2,2,None,2,3,2.5
+Tetrameres mohtedai,"Grasshoppers, terrestrial isopods (first intermediate)",Chckens,2,2,None,2,3,2.5
+Tetrameres pattersoni,Grasshoppers (first intermediate),Bobwhite quail,2,2,None,2,3,2.5
+Hartertia gallinarum,Termites (first intermediate),Fowl,2,2,None,2,3,2.5
+Oxyspirura mansoni,Cockroach Pycnoscalus surinamensis (first intermediate),Poultry and wild birds,2,2,None,2,3,2.5
+Trichospirura leptostoma,Cockroaches (first intermediate),"small New World monkeys like marmosets and tamarins (Callithrix jacchus,Sanguinus oedipus, Callicebus moloch, Saimiri sciureus, Aotus trivirgatus, Callimaco goeldi)""",2,2,None,2,3,2.5
+Protospirura muricola,Cockroaches (first intermediate),Rats,2,2,None,2,3,2.5
+Spirura infundibuliformis,"Grasshoppers, crickets (first intermediate)",Ground squirrels,2,2,None,2,3,2.5
+Spirura malayensis,Cockroach: Blatella germanica (first intermediate),"Slow Loris, Tree shrrews",2,2,None,2,3,2.5
+Spirura rytipleurites,Cockroach: Periplaneta orientalis (first intermediate),"Cat, hedgehog",2,2,None,2,4,3
+Spirura talpae,Rose chafer cetonia aurata (first intermediate),European mole,2,2,None,3,4,3
+Mastophorus muris,"Flour beetles, fleas (first intermediate)",Microtid & Murid Rodents,2,2,None,2,3,2.5
+Spirocerca lupi,"Beetles, dragonfly (first) Hedgehog, mice, chickens, equines, lizards (paratenic)","Dogs, foxes, jackals, wolves",3,2,Middle,2,4,3.5
+Vigisospirura potekhina,Beetles (first intermediate),Carnivores,2,2,None,2,4,3
+Ascarops strongylina,"Beetles (first) Frogs, lizards, snakes, small mammals (paratenic)","Wild & domestic pigs, lagomorphs, guinea pigs, cattle",3,2,Middle,2,4,2.5
+Physocephalus sexalatus,"Beetle larvae (first) amphibians, reptiles, birds & mammals (paratenic)","Wild & domestic pigs, lagomorphs, tapirs, equines, cattle",3,2,Middle,2,4,2.5
+Simondsia paradoxa,"Beetles (first) Frogs, small mammals (paratenic)",Pigs,3,2,Middle,2,4,2.5
+Streptopharagus kutassi,Beetles (first intermediate),"Ground squirrels, hamsters, gerbils",2,2,None,2,3,2.5
+Streptopharagus pigmentatus,Beetles (first intermediate),Old World Monkeys,2,2,None,2,3,2.5
+Gongylonema congolense,Locusta migratoria (first intermediate),Ducks and gallinaceous birds,2,2,None,2,3,2.5
+Gongylonema dupuisi,Dermapteran: Anisolabis annulipes (first intermediate),Mouse: Mastomys sp.,2,2,None,2,3,2.5
+Gongylonema inguvicola,Cockroach: Blatella germanica (first intermediate),Chickens & Mountian quail,2,2,None,2,3,2.5
+Gongylonema mucronatum,Locusta migratoria (first intermediate),Tunisian hedgehog: Erinaceum algirus,2,2,None,2,4,3
+Gongylonema neoplasticum,"Cockroaches, beetles (first intermediate)",Rats,2,2,None,2,3,2.5
+Gongylonema problematicum,Beetle: Blaps sp. (first intermediate),Gerbils,2,2,None,2,3,2.5
+Gongylonema pulchrum,"Many beetles, cockroaches (first intermediate)","Cattle, sheep, goats, pigs, camels, equines, cervids",2,2,None,2,3,2
+Gongylonema soricis,Cockroach: Periplaneta orientalis (first intermediate),Insectivores,2,2,None,2,3,3

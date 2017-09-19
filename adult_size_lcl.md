@@ -1,7 +1,7 @@
 Long life cycles and parasite reproductive sizes
 ================
 
-**Background**: A presumed benefit of a long, multi-host life cycle is that parasites reach big, high trophic levels, in which they can grow to a large and fecund reproductive size. That is, a long life cycle is rewarded with a large body size and higher egg output. I examine this presumed benefit using a [database](http://onlinelibrary.wiley.com/doi/10.1002/ecy.1680/suppinfo) of complex life cycles. The database is focused on helminths (parasitic worms). Then, I explore how adult parasite size relates to definitive host mass and trophic level.
+**Background**: A presumed benefit of a long, multi-host life cycle is that parasites reach big, high trophic levels, in which they can grow to a large and fecund reproductive size. That is, a long life cycle is rewarded with a large body size and higher egg output. I examine this presumed benefit using a [database](http://onlinelibrary.wiley.com/doi/10.1002/ecy.1680/suppinfo) of helminth (parasitic worm) life cycles. Then, I explore how adult parasite size relates to definitive host mass and trophic level.
 
 **Analysis** First, import the libraries and the life cycle database.
 
@@ -19,7 +19,7 @@ dataH <- read.csv(file="CLC_database_hosts.csv", header = TRUE, sep=",")
 dataL <- read.csv(file="CLC_database_lifehistory.csv", header = TRUE, sep=",")
 ```
 
-We are interested in adult sizes, so we'll restrict the data to worms in their definitive hosts. We also remove measurements on adult males, as, unlike females, their body size is presumably not strongly correlated with fecundity (i.e. male reproductive success may be driven by other factors, intraspecific competition for mates).
+We are interested in adult sizes, so we'll restrict the data to worms in their definitive hosts. We also remove measurements on adult males, as, unlike females, their body size is presumably not strongly correlated with fecundity (i.e. male reproductive success may be driven by other factors like intraspecific competition for mates).
 
 ``` r
 # filter to adult stages
@@ -50,21 +50,11 @@ maxLCL <- group_by(dataH, Parasite.species)%>%summarize(maxLCL = max(Host.no))
 minLCL <- filter(dataH, Facultative == "no")%>%
   group_by(Parasite.species)%>%summarise(minLCL = length(unique(Host.no)))
 dataL.sp <- left_join(dataL.sp, maxLCL)
-```
-
-    ## Joining, by = "Parasite.species"
-
-``` r
 dataL.sp <- left_join(dataL.sp, minLCL)
-```
-
-    ## Joining, by = "Parasite.species"
-
-``` r
 rm(minLCL, maxLCL)
 ```
 
-Then we set the theme for plots...
+Then we set the theme for plots and visualize the relationship between adult parasite size and life cycle length.
 
 ``` r
 theme.o <- theme_update(axis.text = element_text(colour="black", size = 15),
@@ -76,8 +66,6 @@ theme.o <- theme_update(axis.text = element_text(colour="black", size = 15),
                         panel.background= element_rect(fill = NA))
 ```
 
-...and visualize the relationship between adult parasite size and life cycle length. It is positive, as expected. However, for a given life cycle length, there is substantial body size variation. For example, worms with 2-host life cycles can be relatively small or relatively large. Also, the biggest difference appears to be between 1- and 2-host cycles, with less increase thereafter.
-
 ``` r
 #let's try a scatter plot first
 ggplot(data = dataL.sp,
@@ -87,25 +75,9 @@ ggplot(data = dataL.sp,
   labs(y="Log(Adult biovolume)\n", x="\nLife cycle length") 
 ```
 
-    ## `geom_smooth()` using method = 'loess'
-
-    ## Warning: Removed 173 rows containing non-finite values (stat_smooth).
-
-    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-    ## parametric, : pseudoinverse used at 0.98
-
-    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-    ## parametric, : neighborhood radius 2.02
-
-    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-    ## parametric, : reciprocal condition number 8.36e-015
-
-    ## Warning in simpleLoess(y, x, w, span, degree = degree, parametric =
-    ## parametric, : There are other near singularities as well. 1
-
-    ## Warning: Removed 173 rows containing missing values (geom_point).
-
 ![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-6-1.png)
+
+It is positive, as expected. However, for a given life cycle length, there is substantial body size variation. For example, worms with 2-host life cycles can be relatively small or relatively large. Also, the biggest difference appears to be between 1- and 2-host cycles, with less increase thereafter.
 
 A simple linear regression confirms that the correlation is significantly positive. However, only 9% of the variation is explained by life cycle length.
 
@@ -150,10 +122,6 @@ ggplot(data = dataL.sp,
   theme(panel.grid.major.x = element_blank())
 ```
 
-    ## Warning: Removed 173 rows containing non-finite values (stat_boxplot).
-
-    ## Warning: Removed 173 rows containing missing values (geom_point).
-
 ![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 Because of this non-linear pattern, a model treating life cycle length as a categorical variable instead of a continuous one is an improvement. Still, the explained variance only increases from 9 to 13%, so there is substantial variation in adult helminth size that is unrelated to life cycle length.
@@ -173,7 +141,7 @@ anova(mdl1, mdl2)
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-To better understand this pattern, let's check our assumptions. Are parasites with longer life cycles really reproducing in bigger hosts? And are parasites bigger in bigger hosts? Let's add definitive host masses to our data table.
+To better understand this pattern (or lack thereof), let's check our assumptions. Are parasites with longer life cycles really reproducing in bigger hosts? And are parasites bigger in bigger hosts? Let's add definitive host masses to our data table.
 
 ``` r
 # host mass dataset
@@ -199,9 +167,7 @@ dataH <- group_by(dataH, Parasite.species)%>%
 dataL.sp <- left_join(dataL.sp, dataH)
 ```
 
-    ## Joining, by = "Parasite.species"
-
-Definitive host masses are available for 879 parasite species. Are parasites with long life cycles reproducing in large hosts? Yes and no. The boxplot below shows the relationship. If we ignore worms with one-host cycles, there does appear to be a relationship between having a long cycle and reproducing in a large host. However, parasites with simple cycles infect hosts that are much larger than expected (mainly grazing mammals). Perhaps this is the only way simple life cycles are viable. Without an intermediate host to consume parasite propagules and aid transmission, a parasite compensates by infecting a large final host.
+Definitive host masses are available for 879 parasite species. Are parasites with long life cycles reproducing in large hosts? Yes and no. The boxplot below shows the relationship. If we ignore worms with one-host cycles, there does appear to be a relationship between having a long cycle and reproducing in a large host. However, parasites with simple cycles infect hosts that are much larger than expected (mainly grazing mammals). Perhaps this is the only way simple life cycles are viable. Infecting a large final host is a way to compensate for not having an intermediate host to consume parasite propagules and aid transmission.
 
 ``` r
 ggplot(dataL.sp,
@@ -212,13 +178,9 @@ ggplot(dataL.sp,
   theme(panel.grid.major.x = element_blank())
 ```
 
-    ## Warning: Removed 92 rows containing non-finite values (stat_boxplot).
-
-    ## Warning: Removed 92 rows containing missing values (geom_point).
-
 ![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-11-1.png)
 
-However, the idea that simple life cycle parasites compensate for poor transmission by growing large in a big final host, is undercut When we plot adult worm size vs definitive host mass. We see a positive, but messy relationship (r2 ~ 0.015).
+However, the idea that simple-cycle parasites compensate for poor transmission by growing large in a big final host, is undercut When we plot adult worm size vs definitive host mass. We see a positive, but messy relationship (r2 ~ 0.015). In other words, infecting a big host is no guarantee that parasites will grow large themselves.
 
 ``` r
 ggplot(dataL.sp,
@@ -228,17 +190,11 @@ ggplot(dataL.sp,
   labs(x = "Log(Definitive host mass)", y = "Log(Adult worm size)")
 ```
 
-    ## `geom_smooth()` using method = 'loess'
-
-    ## Warning: Removed 234 rows containing non-finite values (stat_smooth).
-
-    ## Warning: Removed 234 rows containing missing values (geom_point).
-
 ![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 A predicted benefit of long life cycles is that these parasites reach large definitive hosts, where they themselves can grow to large, fecund sizes. These assumptions need to be re-evaluated. Many parasites with short cycles reproduce in large definitive hosts, and many parasites in large hosts have small reproductive sizes. Consequently, there is not a strong relationship between life cycle length and eventual worm reproductive size.
 
-[Benesh et al. 2014](LINK!!!!!!!) found that nematodes reproducing in high trophic level hosts have longer life cycles on average. We argued that high trophic level hosts (top predators) are usually large, and thus may support parasites growing to a large size. In food webs, there is a correlation between body size and trophic level. But does this also apply to the definitive hosts of helminths? In other words, is it valid to assume that high trophic level hosts are also big ones? Let's import the trophic level data from that study. Trophic levels are only available for a fraction of the parasites, as the Benesh et al. 2014 was restricted to nematodes.
+[Benesh et al. (2014)](LINK!!!!!!!) found that nematodes reproducing in high trophic level hosts have longer life cycles on average. In that paper, we argued that high trophic level hosts (top predators) are usually large, and thus may support parasites growing to a large size. In food webs, there is a correlation between body size and trophic level. But does this also apply to the definitive hosts of helminths? In other words, is it valid to assume that high trophic level hosts are also big ones? Let's import the trophic level data from that study. Trophic levels are only available for a fraction of the parasites, as the Benesh et al. 2014 was restricted to nematodes.
 
 ``` r
 # trophic level data from my tropic vacuum study
@@ -251,7 +207,7 @@ host.tl <- select(host.tl, Parasite.species = Species, Min_TL, Max_TL, Avg_TL)
 dataL.sp <- left_join(dataL.sp, host.tl)
 ```
 
-Here is the relationship between definitive host trophic level and host size.
+Here is the relationship between definitive host trophic level and host body size.
 
 ``` r
 ggplot(dataL.sp, aes(x = Avg_TL, y = log10(host.mass))) + 
@@ -260,17 +216,11 @@ ggplot(dataL.sp, aes(x = Avg_TL, y = log10(host.mass))) +
   labs(x = "Definitive host trophic level", y = "Log(Definitive host mass)")
 ```
 
-    ## `geom_smooth()` using method = 'loess'
-
-    ## Warning: Removed 652 rows containing non-finite values (stat_smooth).
-
-    ## Warning: Removed 652 rows containing missing values (geom_point).
-
 ![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-14-1.png)
 
-The correlation between host trophic level and body size is non-linear. When parasites reproduce in herbivores (trophic level = 2), they tend to be large herbivores. But when they produce in omnivores and predators (trophic level &gt; 2), then there is more of a correlation between host trophic level and mass.
+The correlation between host trophic level and body size is non-linear. When parasites reproduce in herbivores (trophic level = 2), they tend to be large herbivores. But when they produce in omnivores and predators (trophic level &gt; 2), then there is more of a correlation between host trophic level and mass. That is, high trophic level hosts are large, but only if they are not herbivores.
 
-Given the complex relationship between host trophic level and size, and the weak relationship between host size and parasite size, it is perhaps not surprising that adult nematode size is not strongly related to definitive host trophic level.
+Given this complex relationship between host trophic level and size, as well as the weak relationship between host size and parasite size, it is perhaps not surprising that adult nematode size is not strongly related to definitive host trophic level (r2 = 0.026).
 
 ``` r
 #correlation between def host TL and worm size
@@ -279,12 +229,6 @@ ggplot(dataL.sp, aes(x = Avg_TL, y = log10(Biovolume))) +
   geom_smooth(se = F, color = 'darkgray') +
   labs(x = "Definitive host trophic level", y = "Log(Adult worm biovolume)")
 ```
-
-    ## `geom_smooth()` using method = 'loess'
-
-    ## Warning: Removed 678 rows containing non-finite values (stat_smooth).
-
-    ## Warning: Removed 678 rows containing missing values (geom_point).
 
 ![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-15-1.png)
 
@@ -312,7 +256,7 @@ summary(lm(log10(Biovolume) ~ Avg_TL, data = dataL.sp)) # sig but r2 of 2%
     ## Multiple R-squared:  0.02585,    Adjusted R-squared:  0.02245 
     ## F-statistic: 7.615 on 1 and 287 DF,  p-value: 0.006159
 
-As a last exercise, let's reduce the data frame to just the nematode species with adult size, host mass, and host trophic level data available. Then we will fit an array of models to the data to get an idea of which variables best explain adult parasite size.
+As a last exercise, let's reduce the data frame to just the nematode species with adult size, host mass, and host trophic level data available. Then we fit an array of models to the data to get an idea of which variables best explain adult parasite size.
 
 ``` r
 library(MuMIn) # load library for mult-model inference
@@ -369,4 +313,4 @@ subset(model.set, cumsum(weight) <= .95) # 95% ci set
     ## 40  8 -400.047 816.7  5.26  0.020
     ## Models ranked by AICc(x)
 
-All of the top models include life cycle length, and they may or may not contain host mass and trophic level. This suggests that life cycle length explains variation in nematode size that is not explained by def host attributes. Perhaps long life cycles just give parasites more opportunity to grow (a little in each host). However, even in the 'global model', which is obviously overfit, only 13% of the variation in adult parasite size is explained. Other factors like host immunity, interspecific competition, and phylogenetic constraints may strongly parasite final size. In any case, a large, high-trophic level final host does not seem to strongly favor the evolution of large body sizes.
+All of the top models include life cycle length (as either a continuous or categorical variable), and they may or may not contain host mass and trophic level. This suggests that life cycle length explains variation in nematode size that is not explained by the def host attributes. Perhaps long life cycles just give parasites more opportunity to grow (i.e. a little in each host). However, even in the 'global model', which is obviously overfit, only 13% of the variation in adult parasite size is explained. Maybe other factors like definitive host immunity, interspecific competition, and phylogenetic constraints strongly shape adult parasite size. In any case, a large, high-trophic level final host does not seem to come with the benefit of a larger body size.

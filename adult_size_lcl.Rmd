@@ -75,7 +75,7 @@ ggplot(data = dataL.sp,
        aes(x = maxLCL, y = log10(Biovolume))) +
   geom_point(alpha = 0.3, position = position_jitter(height = 0, width = 0.1)) +
   geom_smooth(se = F, color = 'darkgrey') +
-  labs(y="Log(Adult biovolume)\n", x="\nLife cycle length") 
+  labs(y="Log(Adult biomass)\n", x="\nLife cycle length") 
 ```
 
 It is positive, as expected. However, for a given life cycle length, there is substantial body size variation. For example, worms with 2-host life cycles can be relatively small or relatively large. Also, the biggest difference appears to be between 1- and 2-host cycles, with less increase thereafter.
@@ -99,8 +99,9 @@ ggplot(data = dataL.sp,
        aes(x = maxLCL.fac, y = log10(Biovolume))) + 
   geom_boxplot(outlier.color = "white", width = 0.9) +
   geom_jitter(width = 0.2, color = "red", alpha = 0.2) +
-  labs(y="Log(Adult biovolume)\n", x="\nLife cycle length") + 
+  labs(y="Log(Adult biomass)\n", x="\nLife cycle length") + 
   theme(panel.grid.major.x = element_blank())
+# export at 500 x 450 px
 ```
 
 Because of this non-linear pattern, a model treating life cycle length as a categorical variable instead of a continuous one is an improvement. Still, the explained variance only increases from 9 to 13%, so there is substantial variation in adult helminth size that is unrelated to life cycle length.

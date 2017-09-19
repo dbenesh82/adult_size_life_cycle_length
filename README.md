@@ -1,3 +1,3 @@
-# Blah blah
+# Long life cycle, large worms?
 
-Life cycle length vs adult size
+This analysis examines why complex life cycle parasites wait to reproduce until they are transmitted up the food chain. A previous [study]() found that nematode worms have longer life cycles if they reproduce in apex predators. But what is the point of this? What do worms gain? A presumed benefit of a long, multi-host life cycle is that parasites reach big, high trophic levels, in which they can grow to a large and fecund reproductive size. That is, a long life cycle is rewarded with a large body size and higher egg output. I examine this presumed benefit using a [database](http://onlinelibrary.wiley.com/doi/10.1002/ecy.1680/suppinfo) of helminth (parasitic worm) life cycles. Then, I explore how adult parasite size relates to definitive host mass and trophic level.

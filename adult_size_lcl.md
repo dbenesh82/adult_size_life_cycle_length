@@ -72,7 +72,7 @@ ggplot(data = dataL.sp,
        aes(x = maxLCL, y = log10(Biovolume))) +
   geom_point(alpha = 0.3, position = position_jitter(height = 0, width = 0.1)) +
   geom_smooth(se = F, color = 'darkgrey') +
-  labs(y="Log(Adult biovolume)\n", x="\nLife cycle length") 
+  labs(y="Log(Adult biomass)\n", x="\nLife cycle length") 
 ```
 
 ![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-6-1.png)
@@ -118,11 +118,15 @@ ggplot(data = dataL.sp,
        aes(x = maxLCL.fac, y = log10(Biovolume))) + 
   geom_boxplot(outlier.color = "white", width = 0.9) +
   geom_jitter(width = 0.2, color = "red", alpha = 0.2) +
-  labs(y="Log(Adult biovolume)\n", x="\nLife cycle length") + 
+  labs(y="Log(Adult biomass)\n", x="\nLife cycle length") + 
   theme(panel.grid.major.x = element_blank())
 ```
 
 ![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-8-1.png)
+
+``` r
+# export at 500 x 450 px
+```
 
 Because of this non-linear pattern, a model treating life cycle length as a categorical variable instead of a continuous one is an improvement. Still, the explained variance only increases from 9 to 13%, so there is substantial variation in adult helminth size that is unrelated to life cycle length.
 
@@ -194,7 +198,7 @@ ggplot(dataL.sp,
 
 A predicted benefit of long life cycles is that these parasites reach large definitive hosts, where they themselves can grow to large, fecund sizes. These assumptions need to be re-evaluated. Many parasites with short cycles reproduce in large definitive hosts, and many parasites in large hosts have small reproductive sizes. Consequently, there is not a strong relationship between life cycle length and eventual worm reproductive size.
 
-[Benesh et al. (2014)](LINK!!!!!!!) found that nematodes reproducing in high trophic level hosts have longer life cycles on average. In that paper, we argued that high trophic level hosts (top predators) are usually large, and thus may support parasites growing to a large size. In food webs, there is a correlation between body size and trophic level. But does this also apply to the definitive hosts of helminths? In other words, is it valid to assume that high trophic level hosts are also big ones? Let's import the trophic level data from that study. Trophic levels are only available for a fraction of the parasites, as the Benesh et al. 2014 was restricted to nematodes.
+[Benesh et al. (2014)](http://rspb.royalsocietypublishing.org/content/suppl/2014/09/09/rspb.2014.1462.DC1.html%20) found that nematodes reproducing in high trophic level hosts have longer life cycles on average. In that paper, we argued that high trophic level hosts (top predators) are usually large, and thus may support parasites growing to a large size. In food webs, there is a correlation between body size and trophic level. But does this also apply to the definitive hosts of helminths? In other words, is it valid to assume that high trophic level hosts are also big ones? Let's import the trophic level data from that study. Trophic levels are only available for a fraction of the parasites, as the Benesh et al. 2014 was restricted to nematodes.
 
 ``` r
 # trophic level data from my tropic vacuum study
@@ -313,4 +317,4 @@ subset(model.set, cumsum(weight) <= .95) # 95% ci set
     ## 40  8 -400.047 816.7  5.26  0.020
     ## Models ranked by AICc(x)
 
-All of the top models include life cycle length (as either a continuous or categorical variable), and they may or may not contain host mass and trophic level. This suggests that life cycle length explains variation in nematode size that is not explained by the def host attributes. Perhaps long life cycles just give parasites more opportunity to grow (i.e. a little in each host). However, even in the 'global model', which is obviously overfit, only 13% of the variation in adult parasite size is explained. Maybe other factors like definitive host immunity, interspecific competition, and phylogenetic constraints strongly shape adult parasite size. In any case, a large, high-trophic level final host does not seem to come with the benefit of a larger body size.
+All of the top models include life cycle length (as either a continuous or categorical variable), and they may or may not contain host mass and trophic level. This suggests that life cycle length explains variation in nematode size that is not explained by the def host attributes. Perhaps long life cycles just give parasites more opportunity to grow (i.e. a little in each host). However, even in the 'global model', which is obviously overfit, only 13% of the variation in adult parasite size is explained. Maybe other factors like definitive host immunity, interspecific competition, or phylogenetic constraints strongly shape adult parasite size. In any case, a large, high-trophic level final host does not seem to come with the benefit of a larger body size for helminths.

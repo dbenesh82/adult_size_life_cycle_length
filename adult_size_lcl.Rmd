@@ -16,10 +16,13 @@ library(RColorBrewer)
 
 options(stringsAsFactors = FALSE) #never have species lists as factors; always as character vectors
 
+# set wd
+Rmd_loc <- dirname( rstudioapi::getActiveDocumentContext()$path ) # Rmd file location
+setwd(Rmd_loc)
+
 #import the life cycle database data tables
-setwd("C:/Users/phosp/OneDrive/Documents/Benesh/Proposals_ideas/DFG_eigenestelle/prelim_analyses/adult_size_lcl/")
-dataH <- read.csv(file="CLC_database_hosts.csv", header = TRUE, sep=",")
-dataL <- read.csv(file="CLC_database_lifehistory.csv", header = TRUE, sep=",")
+dataH <- read.csv(file="data/CLC_database_hosts.csv", header = TRUE, sep=",")
+dataL <- read.csv(file="data/CLC_database_lifehistory.csv", header = TRUE, sep=",")
 ```
 
 We are interested in adult sizes, so we'll restrict the data to worms in their definitive hosts. We also remove measurements on adult males, as, unlike females, their body size is presumably not strongly correlated with fecundity (i.e. male reproductive success may be driven by other factors like intraspecific competition for mates).
@@ -115,7 +118,7 @@ To better understand this pattern (or lack thereof), let's check our assumptions
 
 ```{r, message=FALSE, warning=FALSE}
 # host mass dataset
-host.size <- read.csv(file="collated_host_mass_data.csv", header = TRUE, sep=",")
+host.size <- read.csv(file="data/collated_host_mass_data.csv", header = TRUE, sep=",")
 
 # host size either a length or a mass; restrict to just masses
 host.size <- filter(host.size, !is.na(body.mass))%>%
@@ -164,7 +167,7 @@ A predicted benefit of long life cycles is that these parasites reach large defi
 
 ```{r, message=FALSE, warning=FALSE}
 # trophic level data from my tropic vacuum study
-host.tl <- read.csv(file = "TV_dryad.csv", header = TRUE, sep = ",")
+host.tl <- read.csv(file = "data/TV_dryad.csv", header = TRUE, sep = ",")
 
 # reduce to needed variables
 host.tl <- select(host.tl, Parasite.species = Species, Min_TL, Max_TL, Avg_TL)

@@ -11,12 +11,20 @@ library(ggplot2)
 library(tidyr)
 library(RColorBrewer)
 
-options(stringsAsFactors = FALSE) #never have species lists as factors; always as character vectors
+options(stringsAsFactors = FALSE) # never have species lists as factors; always as character vectors
 
-#import the life cycle database data tables
-setwd("C:/Users/phosp/OneDrive/Documents/Benesh/Proposals_ideas/DFG_eigenestelle/prelim_analyses/adult_size_lcl/")
-dataH <- read.csv(file="CLC_database_hosts.csv", header = TRUE, sep=",")
-dataL <- read.csv(file="CLC_database_lifehistory.csv", header = TRUE, sep=",")
+# set theme
+theme.o <- theme_update(axis.text = element_text(colour="black", size = 15),
+                        axis.title = element_text(colour="black", size = 18, face = "bold", lineheight=0.25),
+                        axis.ticks = element_line(colour="black"),
+                        panel.border = element_rect(colour = "black",fill=NA),
+                        panel.grid.minor=element_blank(),
+                        panel.grid.major=element_line(color="gray",linetype = "dotted"),
+                        panel.background= element_rect(fill = NA))
+
+# import the life cycle database data tables
+dataH <- read.csv(file="data/CLC_database_hosts.csv", header = TRUE, sep=",")
+dataL <- read.csv(file="data/CLC_database_lifehistory.csv", header = TRUE, sep=",")
 ```
 
 We are interested in adult sizes, so we'll restrict the data to worms in their definitive hosts. We also remove measurements on adult males, as, unlike females, their body size is presumably not strongly correlated with fecundity (i.e. male reproductive success may be driven by other factors like intraspecific competition for mates).
@@ -54,17 +62,7 @@ dataL.sp <- left_join(dataL.sp, minLCL)
 rm(minLCL, maxLCL)
 ```
 
-Then we set the theme for plots and visualize the relationship between adult parasite size and life cycle length.
-
-``` r
-theme.o <- theme_update(axis.text = element_text(colour="black", size = 15),
-                        axis.title = element_text(colour="black", size = 18, face = "bold", lineheight=0.25),
-                        axis.ticks = element_line(colour="black"),
-                        panel.border = element_rect(colour = "black",fill=NA),
-                        panel.grid.minor=element_blank(),
-                        panel.grid.major=element_line(color="gray",linetype = "dotted"),
-                        panel.background= element_rect(fill = NA))
-```
+Visualize the relationship between adult parasite size and life cycle length.
 
 ``` r
 #let's try a scatter plot first
@@ -75,7 +73,7 @@ ggplot(data = dataL.sp,
   labs(y="Log(Adult biomass)\n", x="\nLife cycle length") 
 ```
 
-![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](adult_size_lcl_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
 
 It is positive, as expected. However, for a given life cycle length, there is substantial body size variation. For example, worms with 2-host life cycles can be relatively small or relatively large. Also, the biggest difference appears to be between 1- and 2-host cycles, with less increase thereafter.
 
@@ -109,23 +107,28 @@ summary(mdl1)
 We can also make a boxplot, which shows the non-linearities more clearly, such as the lack of a difference between 2- and 3-host cycles. The plot includes 794 species.
 
 ``` r
-#make life cycle length a factor and pool the few parasites with life cycles longer than three hosts
-dataL.sp <- mutate(dataL.sp, maxLCL.fac = if_else(maxLCL > 3, as.integer(4), maxLCL),
-                   maxLCL.fac = factor(maxLCL.fac, labels = c("1", "2", "3", ">3")))
+# make life cycle length a factor and pool the few parasites with life cycles longer than three hosts
+dataL.sp <- mutate(dataL.sp, maxLCL.fac = if_else(maxLCL > 3, "4", as.character(maxLCL)))%>%
+  mutate(maxLCL.fac = factor(maxLCL.fac, labels = c("1", "2", "3", ">3")))
+```
 
-#boxplot with data points as overlay
-ggplot(data = dataL.sp,
-       aes(x = maxLCL.fac, y = log10(Biovolume))) + 
+``` r
+# boxplot with data points as overlay
+outfig <- ggplot(data = dataL.sp,
+                 aes(x = maxLCL.fac, y = log10(Biovolume))) + 
   geom_boxplot(outlier.color = "white", width = 0.9) +
   geom_jitter(width = 0.2, color = "red", alpha = 0.2) +
   labs(y="Log(Adult biomass)\n", x="\nLife cycle length") + 
   theme(panel.grid.major.x = element_blank())
+outfig
 ```
 
-![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](adult_size_lcl_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-8-1.png)
 
 ``` r
-# export at 500 x 450 px
+# save svg and png of fig for a word doc
+ggsave(filename = "figs/adultsize_vs_lcl.png", width = 5, height = 4.5, units = "in")
+ggsave(filename = "figs/adultsize_vs_lcl.svg", width = 5, height = 4.5, units = "in")
 ```
 
 Because of this non-linear pattern, a model treating life cycle length as a categorical variable instead of a continuous one is an improvement. Still, the explained variance only increases from 9 to 13%, so there is substantial variation in adult helminth size that is unrelated to life cycle length.
@@ -149,7 +152,7 @@ To better understand this pattern (or lack thereof), let's check our assumptions
 
 ``` r
 # host mass dataset
-host.size <- read.csv(file="collated_host_mass_data.csv", header = TRUE, sep=",")
+host.size <- read.csv(file="data/collated_host_mass_data.csv", header = TRUE, sep=",")
 
 # host size either a length or a mass; restrict to just masses
 host.size <- filter(host.size, !is.na(body.mass))%>%
@@ -174,15 +177,22 @@ dataL.sp <- left_join(dataL.sp, dataH)
 Definitive host masses are available for 879 parasite species. Are parasites with long life cycles reproducing in large hosts? Yes and no. The boxplot below shows the relationship. If we ignore worms with one-host cycles, there does appear to be a relationship between having a long cycle and reproducing in a large host. However, parasites with simple cycles infect hosts that are much larger than expected (mainly grazing mammals). Perhaps this is the only way simple life cycles are viable. Infecting a large final host is a way to compensate for not having an intermediate host to consume parasite propagules and aid transmission.
 
 ``` r
-ggplot(dataL.sp,
-       aes(x = maxLCL.fac, y = log10(host.mass))) + 
+outfig <- ggplot(dataL.sp,
+                 aes(x = maxLCL.fac, y = log10(host.mass))) + 
   geom_boxplot(outlier.color = "white", width = 0.9) +
   geom_jitter(width = 0.2, color = "red", alpha = 0.2) +
   labs(y="Log(Definitive host mass)\n", x="\nLife cycle length") + 
   theme(panel.grid.major.x = element_blank())
+outfig
 ```
 
-![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](adult_size_lcl_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-11-1.png)
+
+``` r
+# save svg and png of fig for a word doc
+ggsave(filename = "figs/defhostmass_vs_lcl.png", width = 5, height = 4.5, units = "in")
+ggsave(filename = "figs/defhostmass_vs_lcl.svg", width = 5, height = 4.5, units = "in")
+```
 
 However, the idea that simple-cycle parasites compensate for poor transmission by growing large in a big final host, is undercut When we plot adult worm size vs definitive host mass. We see a positive, but messy relationship (r2 ~ 0.015). In other words, infecting a big host is no guarantee that parasites will grow large themselves.
 
@@ -194,7 +204,7 @@ ggplot(dataL.sp,
   labs(x = "Log(Definitive host mass)", y = "Log(Adult worm size)")
 ```
 
-![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](adult_size_lcl_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-12-1.png)
 
 A predicted benefit of long life cycles is that these parasites reach large definitive hosts, where they themselves can grow to large, fecund sizes. These assumptions need to be re-evaluated. Many parasites with short cycles reproduce in large definitive hosts, and many parasites in large hosts have small reproductive sizes. Consequently, there is not a strong relationship between life cycle length and eventual worm reproductive size.
 
@@ -202,7 +212,7 @@ A predicted benefit of long life cycles is that these parasites reach large defi
 
 ``` r
 # trophic level data from my tropic vacuum study
-host.tl <- read.csv(file = "TV_dryad.csv", header = TRUE, sep = ",")
+host.tl <- read.csv(file = "data/TV_dryad.csv", header = TRUE, sep = ",")
 
 # reduce to needed variables
 host.tl <- select(host.tl, Parasite.species = Species, Min_TL, Max_TL, Avg_TL)
@@ -220,7 +230,7 @@ ggplot(dataL.sp, aes(x = Avg_TL, y = log10(host.mass))) +
   labs(x = "Definitive host trophic level", y = "Log(Definitive host mass)")
 ```
 
-![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-14-1.png)
+![](adult_size_lcl_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-14-1.png)
 
 The correlation between host trophic level and body size is non-linear. When parasites reproduce in herbivores (trophic level = 2), they tend to be large herbivores. But when they produce in omnivores and predators (trophic level &gt; 2), then there is more of a correlation between host trophic level and mass. That is, high trophic level hosts are large, but only if they are not herbivores.
 
@@ -234,7 +244,7 @@ ggplot(dataL.sp, aes(x = Avg_TL, y = log10(Biovolume))) +
   labs(x = "Definitive host trophic level", y = "Log(Adult worm biovolume)")
 ```
 
-![](adult_size_lcl_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](adult_size_lcl_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-15-1.png)
 
 ``` r
 summary(lm(log10(Biovolume) ~ Avg_TL, data = dataL.sp)) # sig but r2 of 2%
